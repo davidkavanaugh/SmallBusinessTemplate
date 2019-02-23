@@ -17,6 +17,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 
+
 const drawerWidth = 240;
 
 const styles = theme => ({
@@ -50,7 +51,6 @@ const styles = theme => ({
     padding: theme.spacing.unit * 3,
   },
 });
-
 class ResponsiveDrawer extends React.Component {
   state = {
     mobileOpen: false,
@@ -62,8 +62,9 @@ class ResponsiveDrawer extends React.Component {
 
   render() {
     const { classes, theme } = this.props;
-
     const drawer = (
+<Hidden xsUp>
+
       <div>
         <div className={classes.toolbar} />
         <Divider />
@@ -85,12 +86,16 @@ class ResponsiveDrawer extends React.Component {
           ))}
         </List>
       </div>
+      </Hidden>
     );
 
     return (
+      <Hidden smUp>
+
       <div className={classes.root}>
         <CssBaseline />
         <AppBar position="fixed" className={classes.appBar}>
+
           <Toolbar>
             <IconButton
               color="inherit"
@@ -104,7 +109,9 @@ class ResponsiveDrawer extends React.Component {
               Responsive drawer
             </Typography>
           </Toolbar>
+
         </AppBar>
+        
         <nav className={classes.drawer}>
           {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
           <Hidden smUp implementation="css">
@@ -133,6 +140,7 @@ class ResponsiveDrawer extends React.Component {
             </Drawer>
           </Hidden>
         </nav>
+
         <main className={classes.content}>
           <div className={classes.toolbar} />
           <Typography paragraph>
@@ -161,8 +169,10 @@ class ResponsiveDrawer extends React.Component {
           </Typography>
         </main>
       </div>
+      </Hidden>
     );
   }
+
 }
 
 ResponsiveDrawer.propTypes = {
@@ -174,3 +184,4 @@ ResponsiveDrawer.propTypes = {
 };
 
 export default withStyles(styles, { withTheme: true })(ResponsiveDrawer);
+
