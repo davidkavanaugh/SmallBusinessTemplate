@@ -35,6 +35,10 @@ body{
   }
 }
 
-.fullheight{
-  height: 100vh;
+.fullHeight{
+  min-height: 100vh;
+}
+
+.lineHeight{
+  line-height: 1rem;
 }

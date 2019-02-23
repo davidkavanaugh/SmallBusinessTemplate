@@ -3,12 +3,11 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
 import Hidden from '@material-ui/core/Hidden';
 import { Link } from 'react-scroll'
 import Headroom from 'react-headroom';
+import SideDrawer from '././SideDrawer/SideDrawer';
+import Logo from './Logo/Logo';
 
 import './NavBar.css';
 
@@ -27,12 +26,10 @@ const styles = {
     
     return (
     <Headroom>
-      <div className={classes.root}>
+      <div id="navBar" className={classes.root}>
         <AppBar position="static">
           <Toolbar>
-            <Typography variant="h6" color="inherit" className={classes.grow}>
-              Logo
-            </Typography>
+            <Logo />
             <Hidden xsDown>
                 <Link
                   className="navigation__link"
@@ -40,9 +37,9 @@ const styles = {
                   to="section_1"
                   spy={true}
                   smooth={true}
-                  offset={-70}
+                  offset={0}
                   duration={500}
-                >Section 1
+                >Home
                 </Link>
                 <Link
                   className="navigation__link"
@@ -50,7 +47,7 @@ const styles = {
                   to="section_2"
                   spy={true}
                   smooth={true}
-                  offset={-70}
+                  offset={0}
                   duration={500}
                 >Section 2
                 </Link>
@@ -60,15 +57,13 @@ const styles = {
                   to="section_3"
                   spy={true}
                   smooth={true}
-                  offset={-70}
+                  offset={0}
                   duration={500}
                 >Section 3
                 </Link>              
             </Hidden>
             <Hidden smUp>
-              <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
-                <MenuIcon />
-              </IconButton>
+              <SideDrawer />
             </Hidden>
           </Toolbar>
         </AppBar>
