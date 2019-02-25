@@ -9,7 +9,9 @@
   .section2__photo1{
     max-width: 100%;
   }
-
+  .section2__title{
+    margin-bottom: 25px;
+  }
   section {
     max-width: 1200px;
     margin: 0 auto;
@@ -26,4 +28,8 @@
 
   p{
     text-align: justify;
+  }
+
+  .social{
+    display: inline-flex;
   }

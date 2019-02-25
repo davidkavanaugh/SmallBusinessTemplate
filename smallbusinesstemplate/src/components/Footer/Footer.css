@@ -1,0 +1,17 @@
+#footer{
+    background: lightgray;
+    color: black;
+    margin: 0 0;
+    text-align: center;
+    padding: 15px 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.footer__contact{
+    padding-top: 15px;
+    display: inline-flex;
+}
+.footer__phone, .footer__email{
+    padding: 0 20px;
+    font-size: .8rem;
+}
+

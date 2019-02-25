@@ -53,50 +53,47 @@ class SwipeableTemporaryDrawer extends React.Component {
     const sideList = (
       <div className={classes.list}>
         <List>
-          {['Home'].map((option, index) => (
+          {['Home'].map((option1, index) => (
             <Link 
               to="section_1"
               spy={true}
               smooth={true}
               offset={0}
-              duration={500}>
-            <MenuItem 
-            key={option}
-            onClick={this.toggleDrawer('right', false)}
-            >
-            {option}
-          </MenuItem>
-          </Link>
+              duration={500}
+              key={option1}>
+                <MenuItem 
+                    onClick={this.toggleDrawer('right', false)}>
+                    {option1}
+                </MenuItem>
+            </Link>
           ))}
-          {['Section 2'].map((option, index) => (
+          {['Section 2'].map((option2, index) => (
             <Link 
               to="section_2"
               spy={true}
               smooth={true}
               offset={0}
-              duration={500}>
-            <MenuItem 
-            key={option}
-            onClick={this.toggleDrawer('right', false)}
-          >
-            {option}
-          </MenuItem>
-          </Link>
+              duration={500}
+              key={option2}>
+                <MenuItem 
+                  onClick={this.toggleDrawer('right', false)}>
+                  {option2}
+                </MenuItem>
+            </Link>
           ))}
-          {['Section 3'].map((option, index) => (
+          {['Section 3'].map((option3, index) => (
             <Link 
               to="section_3"
               spy={true}
               smooth={true}
               offset={0}
-              duration={500}>
-            <MenuItem 
-            key={option}
-            onClick={this.toggleDrawer('right', false)}
-          >
-            {option}
-          </MenuItem>
-          </Link>
+              duration={500}
+              key={option3}>
+                <MenuItem 
+                  onClick={this.toggleDrawer('right', false)}>
+                  {option3}
+                </MenuItem>
+            </Link>
           ))}
         </List>
       </div>
