@@ -2,14 +2,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
     padding: 15px 15px;
     line-height:1.3rem;
   }
   .section2__photo1{
     max-width: 100%;
+
   }
   .section2__title{
+    text-align: right;
+    padding-right: 15px;
     margin-bottom: 25px;
   }
   section {
@@ -24,12 +26,12 @@
     flex-grow: 2;
     flex-shrink: 2;
     flex-basis: 0;
+    text-align: center;
   }
 
   p{
     text-align: justify;
   }
-
   .social{
     display: inline-flex;
   }
