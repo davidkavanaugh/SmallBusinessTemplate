@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MoreInfo from './MoreInfo/MoreInfo';
+import MoreInfo from '../Buttons/MoreInfo/MoreInfo';
 import './Section1.css';
 
 class Section1 extends Component {
