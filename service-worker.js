@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/davidkavanaugh/SmallBusinessTemplate/tree/master/smallbusinesstemplate/precache-manifest.0f76b86c1da6d79710fc18700256f293.js"
+  "/SmallBusinessTemplate/precache-manifest.435e716e1e039dda0efc1025a97a15e3.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/davidkavanaugh/SmallBusinessTemplate/tree/master/smallbusinesstemplate/index.html", {
+workbox.routing.registerNavigationRoute("/SmallBusinessTemplate/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
