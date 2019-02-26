@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/SmallBusinessTemplate/static/js/runtime~main.e33a8108.js"
   },
   {
-    "revision": "f3eb655fe5a55f798fb7",
-    "url": "/SmallBusinessTemplate/static/js/main.f3eb655f.chunk.js"
+    "revision": "2f2f9d0d6f538da5cfce",
+    "url": "/SmallBusinessTemplate/static/js/main.2f2f9d0d.chunk.js"
   },
   {
     "revision": "a6b18011057fb8539403",
     "url": "/SmallBusinessTemplate/static/js/2.a6b18011.chunk.js"
   },
   {
-    "revision": "f3eb655fe5a55f798fb7",
-    "url": "/SmallBusinessTemplate/static/css/main.594fc154.chunk.css"
+    "revision": "2f2f9d0d6f538da5cfce",
+    "url": "/SmallBusinessTemplate/static/css/main.36acf48b.chunk.css"
   },
   {
-    "revision": "f8cf7412258b8d01ae15deb454f28d90",
+    "revision": "05478db8c7437aa7ecdc9273c4db738c",
     "url": "/SmallBusinessTemplate/index.html"
   }
 ];
