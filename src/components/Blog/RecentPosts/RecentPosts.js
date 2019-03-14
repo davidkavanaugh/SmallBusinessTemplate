@@ -9,14 +9,14 @@ class RecentPosts extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      posts: []
+      blogposts: []
    }
  }
 
 async componentDidMount() {
  try {
-   const posts = await strapi.getEntries("blogposts")
-   this.setState({ posts });
+   const blogposts = await strapi.getEntries("blogposts")
+   this.setState({ blogposts });
  } 
  catch(err) {
   alert(err);
@@ -24,23 +24,22 @@ async componentDidMount() {
 }
 render() {
   return (
-    <section>
-      {this.state.posts.reverse().slice(-0, -this.state.posts.length+1).map(post => 
-        <article className="featured-blog-post" key={post.id}>
-         <h3 className="featured-blog-post__title">{post.title}</h3>
-         <img className="featured-blog-post__image"src={`http://localhost:1337${post.image.url}`} alt={post.title} /><br />
-         <div className="featured-blog-post__content">{post.content}</div>
+    <section className="recent-posts-section">
+      {this.state.blogposts.reverse().slice(-0, -this.state.blogposts.length+1).map(blogpost => 
+        <article className="featured-blog-post" key={blogpost.id}>
+         <h3 className="featured-blog-post__title">{blogpost.title}</h3>
+         <img className="featured-blog-post__image"src={`http://localhost:1337${blogpost.image.url}`} alt={blogpost.title} /><br />
+         <div className="featured-blog-post__content">{blogpost.content}</div>
         </article>
       )}
-      <h2>Recent Posts</h2>
-      {this.state.posts.slice(-0, -this.state.posts.length+3).map(post => 
-        <div className="recent-posts" key={post.id}>
-          <Link className="flex" to={`/blogpost/${post.id}`}>
-            <h3 className="recent-posts__post-link">{post.title}</h3>
+      <h4 className="recent-posts-section-title">Recent Posts</h4>
+      {this.state.blogposts.slice(-0, -this.state.blogposts.length+3).map(blogpost => 
+        <div className="recent-posts" key={blogpost.id}>
+          <Link className="flex" to={`/blogpost/${blogpost.id}`}>
+            <h5 className="recent-posts__post-link">{blogpost.title}</h5>
           </Link>
         </div>
       )}
-      <Link className="" to="/older-posts">Older Posts</Link>
     </section>
   )
  }

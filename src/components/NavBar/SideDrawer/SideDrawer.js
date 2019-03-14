@@ -69,7 +69,7 @@ class SwipeableTemporaryDrawer extends React.Component {
                 </MenuItem>
             </Link>
           ))}
-          {['Section 2'].map((option2, index) => (
+          {['About Us'].map((option2, index) => (
             <Link 
               to="section_2"
               spy={true}
@@ -83,7 +83,7 @@ class SwipeableTemporaryDrawer extends React.Component {
                 </MenuItem>
             </Link>
           ))}
-          {['Section 3'].map((option3, index) => (
+          {['Prices'].map((option3, index) => (
             <Link 
               to="section_3"
               spy={true}

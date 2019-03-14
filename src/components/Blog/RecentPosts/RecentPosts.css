@@ -1,16 +1,3 @@
-.featured-blog-post{
-}
-
-.featured-blog-post__title{
-    font-weight: 400;
-    font-size: 1.7em;
-
-}
-.featured-blog-post__image{
-    
-}
-
-
 .featured-blog-post__author{
     font-weight: 300;
     font-style: italic;
@@ -18,18 +5,13 @@
 }
 
 .featured-blog-post__content{
-    font-weight: 400;
-    font-size: 1.1em;
+    margin-bottom: 25px;
 }
-
-.recent-posts{
+.recent-posts-section{
+    margin-bottom: 50px;
 }
-.recent-posts h2{
+.recent-posts-section-title{
     font-weight: 500;
-    font-size: 1.1em;  
-}
-.recent-posts__post-link{
-    font-weight: 400;
-    font-size: 1.1em; 
-    line-height: 0.7em;
+    font-size: 1.2em;
+    margin-bottom: 5px;
 }

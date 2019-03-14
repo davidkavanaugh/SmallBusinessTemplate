@@ -33,7 +33,6 @@ const styles = {
             <Hidden xsDown>
                 <Link
                   className="navigation__link"
-                  activeClass="active"
                   to="section_1"
                   spy={true}
                   smooth={true}
@@ -43,27 +42,33 @@ const styles = {
                 </Link>
                 <Link
                   className="navigation__link"
-                  activeClass="active"
                   to="section_2"
                   spy={true}
                   smooth={true}
                   offset={0}
                   duration={500}
-                >Section 2
+                >About Us
                 </Link>
                 <Link
                   className="navigation__link"
-                  activeClass="active"
                   to="section_3"
                   spy={true}
                   smooth={true}
                   offset={0}
                   duration={500}
-                >Section 3
+                >Prices
+                </Link> 
+                <Link
+                  className="navigation__link"
+                  to="blog"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                >Blog
                 </Link> 
                 <a
                   className="navigation__link"
-                  activeClass="active"
                   href="/product"
                   spy={true}
                   smooth={true}

@@ -23,7 +23,7 @@ function OutlinedButtons(props) {
         color="primary" 
         className={classes.button}>
         <Link 
-            to="section_3"
+            to="section_2"
             spy={true}
             smooth={true}
             offset={0}
