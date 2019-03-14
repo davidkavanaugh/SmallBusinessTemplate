@@ -60,7 +60,17 @@ const styles = {
                   offset={0}
                   duration={500}
                 >Section 3
-                </Link>              
+                </Link> 
+                <a
+                  className="navigation__link"
+                  activeClass="active"
+                  href="/product"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                >Store
+                </a>               
             </Hidden>
             <Hidden smUp>
               <SideDrawer />

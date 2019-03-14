@@ -7,6 +7,8 @@ import MenuIcon from '@material-ui/icons/Menu';import List from '@material-ui/co
 import MenuItem from '@material-ui/core/MenuItem';
 import { Link } from 'react-scroll'
 
+import './SideDrawer.css';
+
 const styles = {
   list: {
     width: 250,
@@ -94,6 +96,34 @@ class SwipeableTemporaryDrawer extends React.Component {
                   {option3}
                 </MenuItem>
             </Link>
+            ))}
+          {['Blog'].map((option4, index) => (
+            <Link 
+              to="blog"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              key={option4}>
+                <MenuItem 
+                  onClick={this.toggleDrawer('right', false)}>
+                  {option4}
+                </MenuItem>
+            </Link>
+          ))}
+          {['Store'].map((option5, index) => (
+            <a href="/product"
+              className="sidedrawer__store-link"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              key={option5}>
+                <MenuItem 
+                  onClick={this.toggleDrawer('right', false)}>
+                  {option5}
+                </MenuItem>
+            </a>
           ))}
         </List>
       </div>

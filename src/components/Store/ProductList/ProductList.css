@@ -1,0 +1,24 @@
+.ProductList{
+    margin: 50px 0px;
+    min-height: 100vh;
+}
+
+.ProductList-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.ProductList-product{
+    margin: 25px 0;
+    text-align: center;
+    width: 250px;
+}
+
+.ProductList-product img{
+    width: 190px;
+    border-style: dotted;
+    border-color: black;
+    border-width: 1px;
+    
+}

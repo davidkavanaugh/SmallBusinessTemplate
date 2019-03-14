@@ -1,0 +1,35 @@
+.featured-blog-post{
+}
+
+.featured-blog-post__title{
+    font-weight: 400;
+    font-size: 1.7em;
+
+}
+.featured-blog-post__image{
+    
+}
+
+
+.featured-blog-post__author{
+    font-weight: 300;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.featured-blog-post__content{
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+.recent-posts{
+}
+.recent-posts h2{
+    font-weight: 500;
+    font-size: 1.1em;  
+}
+.recent-posts__post-link{
+    font-weight: 400;
+    font-size: 1.1em; 
+    line-height: 0.7em;
+}

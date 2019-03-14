@@ -1,0 +1,51 @@
+
+#snipcart-footer{
+    display: none;
+}
+
+#snipcart-header{
+    color: white;
+    background: #3F51B5;
+}
+#snipcart-header .snip-header__total{
+    padding: 0;
+    background: transparent;
+}
+#snipcart-header .snip-header__total-label{
+    color: white;
+}
+
+#snipcart-title{
+    font-size: 1.5em;
+}
+#snipcart-actions .snip-btn{
+    color: white;
+    background: #3F51B5;
+}
+#snipcart-sub-content .snip-btn{
+    color: white;
+    background: #3F51B5;
+}
+
+#snipcart-sub-content .snip-product__empty{
+    font-size: 1.2em;
+}
+#snipcart-main-content{
+    font-family: 'Roboto', sans-serif;
+}
+
+.snip-product__remove{
+    display:none;
+}
+
+.cart-btn{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    margin-top: 25px;
+}
+
+.snipcart-checkout.snipcart-summary{
+    margin-right: 25px;
+}

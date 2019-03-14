@@ -1,0 +1,12 @@
+.navigation__link{
+    color: white;
+    transition: color 0.5s;
+    padding: 0 0.5rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navigation__link:hover,
+.navigation__link:active{
+    color: lightgrey;
+}
