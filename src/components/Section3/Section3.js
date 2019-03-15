@@ -26,8 +26,7 @@ async componentDidMount() {
 
   render() {
     return (
-      <div id="section_3">
-        <div className="fullHeight">
+      <div id="section_3" className="fullHeight">
         <h3>Section 3</h3>
         <div className="deals">
           {this.state.deals.map(deal =>
@@ -44,7 +43,6 @@ async componentDidMount() {
           )}
           </div>
           <div className="phonenumber">call <PhoneNumber/></div>
-        </div>
       </div>
     )
   }
