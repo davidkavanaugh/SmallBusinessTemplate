@@ -13,6 +13,15 @@
     margin: 25px 0;
     text-align: center;
     width: 250px;
+    color: black;
+    transition: color .5s;
+}
+.ProductList-product:hover{
+    color: gray;
+}
+
+.product-list__name{
+    padding: 10px 10px;
 }
 
 .ProductList-product img{

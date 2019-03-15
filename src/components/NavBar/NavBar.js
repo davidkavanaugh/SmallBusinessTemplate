@@ -33,36 +33,36 @@ const styles = {
             <Hidden xsDown>
                 <Link
                   className="navigation__link"
-                  to="section_1"
-                  spy={true}
                   smooth={true}
+
+                  to="section_1"
                   offset={0}
                   duration={500}
                 >Home
                 </Link>
                 <Link
                   className="navigation__link"
-                  to="section_2"
-                  spy={true}
                   smooth={true}
+
+                  to="section_2"
                   offset={0}
                   duration={500}
                 >About Us
                 </Link>
                 <Link
                   className="navigation__link"
-                  to="section_3"
-                  spy={true}
                   smooth={true}
+
+                  to="section_3"
                   offset={0}
                   duration={500}
                 >Prices
                 </Link> 
                 <Link
                   className="navigation__link"
-                  to="blog"
-                  spy={true}
                   smooth={true}
+
+                  to="blog"
                   offset={0}
                   duration={500}
                 >Blog
@@ -70,8 +70,6 @@ const styles = {
                 <a
                   className="navigation__link"
                   href="/product"
-                  spy={true}
-                  smooth={true}
                   offset={0}
                   duration={500}
                 >Store

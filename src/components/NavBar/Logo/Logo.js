@@ -23,7 +23,6 @@ class Logo extends Component {
         <Typography variant="h6" color="inherit" className={classes.grow}>
             <Link id="logo"
                   to="section_1"
-                  spy={true}
                   smooth={true}
                   offset={0}
                   duration={500}

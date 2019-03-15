@@ -1,6 +1,43 @@
 #section_3{
+    padding: 150px 25px 0px 25px;
+}
+
+.deals{
+    padding: 35px 35px 15px 35px;
+    max-width: 500px;
+    background-color: black;
+    margin: 25px auto;
+    border-radius: 12px;
+    color: white;
+}
+
+.deals__content{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+
+.deal__name-and-description{
+    text-align: left;
+    vertical-align: middle;
+    min-width: 85px;
+}
+
+.deal__name{
+    font-size: 1.7em;
+}
+
+.deal__price-per-unit{
+    text-align: right;
+    vertical-align: middle;
+    min-width: 75px;
+}
+
+.deal__price{
+    font-size: 1.7em;
+}
+
+#section_3 .phonenumber{
+float: right;
+text-align: right;
 }

@@ -36,11 +36,10 @@ async componentDidMount() {
                 <h2>{miscpage.subtitle}</h2>
                 <Link 
                   to="section_2"
-                  spy={true}
                   smooth={true}
                   offset={0}
                   duration={500}>
-                  <Button
+                  <Button className="section-1__button"
                     variant="outlined" 
                     color="primary">
                     {miscpage.buttontext}

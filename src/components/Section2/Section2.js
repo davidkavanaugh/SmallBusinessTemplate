@@ -5,7 +5,6 @@ import InstagramBtn from '../Buttons/InstagramBtn/InstagramBtn';
 import FacebookBtn from '../Buttons/FacebookBtn/FacebookBtn';
 import Markdown from 'markdown-to-jsx';
 
-import photo from '../../assets/corporate-photo.jpg';
 import './Section2.css';
 
 const strapi = new Strapi("https://strapi-cms-lite.herokuapp.com");

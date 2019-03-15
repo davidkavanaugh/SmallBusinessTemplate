@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Markdown from 'markdown-to-jsx';
 
 
 import './BlogPost.css';
@@ -27,10 +28,7 @@ class BlogPost extends Component {
           <Link className="return" to="/">recent posts</Link>   
           <h3 className="blogpost__title">{this.state.blogpost.title}</h3>
           <img className="blogpost__image"src={`https://strapi-cms-lite.herokuapp.com${this.state.blogpost.image.url}`} alt={this.state.blogpost.title} /><br />
-          <p className="blogpost__description">
-            {this.state.blogpost.content}
-          </p>
-        
+          <Markdown>{this.state.blogpost.content}</Markdown>
         </div>
       );
     }

@@ -5,3 +5,11 @@
     text-align: center;
     margin-top: -65px; 
 }
+
+#section_1 h1{
+    padding: 1px 1px;
+}
+
+#section_1 .section-1__button{
+    margin: 10px 100px;
+}

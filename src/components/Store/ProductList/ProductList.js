@@ -34,8 +34,8 @@ class ProductList extends Component {
               return (
                 <div className="ProductList-product" key={product.id}>
                   <Link className="flex" to={`/product/${product.id}`}>
-                    <h3>{product.name}</h3>
-                    <img src={`https://strapi-cms-lite.herokuapp.com${product.image.url}`} alt={product.name} /><br />
+                    <h3 className="product-list__name">{product.name}</h3>
+                    <img src={`https://strapi-cms-lite.herokuapp.com/${product.image.url}`} />
                   </Link>
                   <BuyButton product={product} />
                 </div>

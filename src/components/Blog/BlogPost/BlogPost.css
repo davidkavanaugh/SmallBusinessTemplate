@@ -1,3 +1,12 @@
 .blogpost__title{
     margin-top: 5px;
 }
+
+.blogpost .return{
+    text-decoration: underline;
+    color: inherit;
+    transition: color .5s;
+}
+.blogpost .return:hover{
+    color: gray;
+}

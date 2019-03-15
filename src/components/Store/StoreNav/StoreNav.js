@@ -29,10 +29,7 @@ const styles = {
             <Logo />
                 <a
                   className="navigation__link"
-                  activeClass="active"
                   href="/"
-                  spy={true}
-                  smooth={true}
                   offset={0}
                   duration={500}
                 >Home

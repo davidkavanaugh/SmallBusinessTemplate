@@ -5,7 +5,7 @@
 }
 
 .featured-blog-post__content{
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 .recent-posts-section{
     margin-bottom: 50px;
@@ -14,4 +14,14 @@
     font-weight: 500;
     font-size: 1.2em;
     margin-bottom: 5px;
+}
+
+#recent-posts .recent-posts .recent-posts__post-link{
+    color: inherit;
+    transition: color .5s;
+    text-decoration: underline;
+}
+
+#recent-posts .recent-posts__post-link:hover{
+    color: gray;
 }

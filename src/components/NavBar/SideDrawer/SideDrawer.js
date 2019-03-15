@@ -58,9 +58,9 @@ class SwipeableTemporaryDrawer extends React.Component {
           {['Home'].map((option1, index) => (
             <Link 
               to="section_1"
-              spy={true}
               smooth={true}
-              offset={0}
+
+                  offset={0}
               duration={500}
               key={option1}>
                 <MenuItem 
@@ -72,9 +72,9 @@ class SwipeableTemporaryDrawer extends React.Component {
           {['About Us'].map((option2, index) => (
             <Link 
               to="section_2"
-              spy={true}
               smooth={true}
-              offset={0}
+
+                  offset={0}
               duration={500}
               key={option2}>
                 <MenuItem 
@@ -86,9 +86,9 @@ class SwipeableTemporaryDrawer extends React.Component {
           {['Prices'].map((option3, index) => (
             <Link 
               to="section_3"
-              spy={true}
               smooth={true}
-              offset={0}
+
+                  offset={0}
               duration={500}
               key={option3}>
                 <MenuItem 
@@ -100,9 +100,9 @@ class SwipeableTemporaryDrawer extends React.Component {
           {['Blog'].map((option4, index) => (
             <Link 
               to="blog"
-              spy={true}
-              smooth={true}
-              offset={0}
+                  offset={0}
+                  smooth={true}
+
               duration={500}
               key={option4}>
                 <MenuItem 
@@ -114,9 +114,9 @@ class SwipeableTemporaryDrawer extends React.Component {
           {['Store'].map((option5, index) => (
             <a href="/product"
               className="sidedrawer__store-link"
-              spy={true}
               smooth={true}
-              offset={0}
+
+                  offset={0}
               duration={500}
               key={option5}>
                 <MenuItem 

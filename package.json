@@ -8,13 +8,15 @@
     "@material-ui/icons": "^3.0.2",
     "markdown-to-jsx": "^6.9.2",
     "netlify-cli": "^2.8.1",
+    "prop-types": "^15.7.2",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-headroom": "^2.2.4",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.5",
     "react-scroll": "^1.7.11",
-    "strapi-sdk-javascript": "^0.3.1"
+    "strapi-sdk-javascript": "^0.3.1",
+    "unquote": "^1.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
