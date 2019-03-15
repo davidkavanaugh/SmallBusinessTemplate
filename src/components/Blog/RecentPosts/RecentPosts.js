@@ -46,12 +46,3 @@ render() {
 }
 export default RecentPosts;
 
-
-
-// {this.state.posts.map(post => 
-//   <div className="recent-posts" key={post.id}>
-//     <Link className="flex" to={`/blogpost/${post.id}`}>
-//       <h3 className="recent-posts__post-link">{post.title}</h3>
-//     </Link>
-//   </div>
-// )}
