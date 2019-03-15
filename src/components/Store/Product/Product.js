@@ -11,7 +11,7 @@ class Product extends Component {
   }
 
   async componentDidMount() {
-    let response = await fetch(`http://localhost:1337/products/${this.props.match.params.id}`)
+    let response = await fetch(`https://strapi-cms-lite.herokuapp.com/products/${this.props.match.params.id}`)
     let data = await response.json()
     this.setState({
       loading: false,
@@ -26,7 +26,7 @@ class Product extends Component {
         <a href="/product"><Button variant="contained" size="small" color="primary">back</Button></a>   
           <div className="product__information">
             <h2 className="Product-title">{this.state.product.name}</h2>
-            <img src={`http://localhost:1337${this.state.product.image.url}`} />
+            <img src={`https://strapi-cms-lite.herokuapp.com/${this.state.product.image.url}`} />
             <br /><BuyButton {...this.state} />
           </div>
           <div className="product__description">

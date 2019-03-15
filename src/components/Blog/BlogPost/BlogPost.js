@@ -12,7 +12,7 @@ class BlogPost extends Component {
   }
 
   async componentDidMount() {
-    let response = await fetch(`http://localhost:1337/blogposts/${this.props.match.params.id}`)
+    let response = await fetch(`https://strapi-cms-lite.herokuapp.com/blogposts/${this.props.match.params.id}`)
     let data = await response.json()
     this.setState({
       loading: false,
@@ -26,7 +26,7 @@ class BlogPost extends Component {
         <div className="blogpost">
           <Link className="return" to="/">recent posts</Link>   
           <h3 className="blogpost__title">{this.state.blogpost.title}</h3>
-          <img className="blogpost__image"src={`http://localhost:1337${this.state.blogpost.image.url}`} alt={this.state.blogpost.title} /><br />
+          <img className="blogpost__image"src={`https://strapi-cms-lite.herokuapp.com${this.state.blogpost.image.url}`} alt={this.state.blogpost.title} /><br />
           <p className="blogpost__description">
             {this.state.blogpost.content}
           </p>
