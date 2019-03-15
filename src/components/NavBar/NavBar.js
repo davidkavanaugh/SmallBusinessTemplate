@@ -7,6 +7,8 @@ import Hidden from '@material-ui/core/Hidden';
 import { Link } from 'react-scroll'
 import SideDrawer from '././SideDrawer/SideDrawer';
 import Logo from './Logo/Logo';
+import Headroom from 'react-headroom';
+
 
 import './NavBar.css';
 
@@ -25,7 +27,9 @@ const styles = {
     
     return (
       <div id="navBar" className={classes.root}>
-        <AppBar>
+      <Headroom>
+<AppBar position="static">
+
           <Toolbar>
             <Logo />
             <Hidden xsDown>
@@ -78,6 +82,8 @@ const styles = {
             </Hidden>
           </Toolbar>
         </AppBar>
+        </Headroom>
+
       </div>
     );
   }
