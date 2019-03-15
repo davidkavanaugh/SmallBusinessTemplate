@@ -1,8 +1,7 @@
 #section_2{
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding: 15px 15px;
+    padding: 90px 15px;
     line-height:1.3rem;
   }
   .section2__photo1{
